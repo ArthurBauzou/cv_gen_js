@@ -1,0 +1,128 @@
+:root {
+    --light_green: #dce9e7;
+    --deep_green: #166c60;
+    --standard_margin: 3px;
+}
+body {
+    margin: 0;
+}
+
+/* ///////// */
+/* MAIN GRID */
+/* ///////// */
+#cv {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 21cm;
+    height: 29.7cm;
+    font-family: 'Fira Sans', sans-serif;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+} 
+#title_bar {
+    background-color: var(--deep_green);
+    text-align: right;
+    color: white;
+    font-weight: 600;
+    padding-top: 22px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+#main_cv {
+    flex: 1;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+#main_col {
+    width: 70%;
+    margin-right: 28px;
+    padding: 4px;
+}
+#side_col {
+    width: auto;
+    flex: 1;
+    padding: 4px;
+}
+
+/* /////// */
+/* GENERAL */
+/* /////// */
+img.photo {
+    width: 100%;
+    height: 18%;
+    object-fit: cover;
+}
+p.name {
+    font-size: 28px;
+    padding-bottom: 12px;
+    border-bottom: 1.5px solid black;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* //////// */
+/* SECTIONS */
+/* //////// */
+section {
+    border-bottom: 1.5px solid black;
+}
+/* section title */
+.section_title {
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: var(--standard_margin);
+    margin-top: 16px;
+}
+.section_title>span {
+    margin: 4px 0px;
+    font-size: 16px;
+}
+.section_title>span.barre {
+    background-color: var(--light_green);
+    width: auto;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    flex: 1;
+}
+/* text */
+p.block_text {
+    line-height: 16px;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0px;
+    margin-right: 8px;
+}
+p.block_text:last-child {
+    margin-bottom: 8px;
+}
+/* blocks */
+div.block_line{
+    margin-bottom: 3px;
+}
+span.block_title {
+    font-weight: 600;
+    font-size: 13px;
+    margin: 0px;
+}
+span.block_date {
+    font-weight: 400;
+    font-size: 12px;
+}
+/* separators */
+span.separator {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0px 10px;
+}
+span.date_separator {
+    font-weight: 200;
+    font-size: 12px;
+    margin: 0px 4px;
+}

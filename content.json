@@ -1,0 +1,225 @@
+{  
+  "general": {
+    "title": "développeur IA / data analyst",
+    "first_name": "arthur",
+    "last_name": "bauzou",
+    "birth": {
+      "day": 5,
+      "month": 6,
+      "year": 1985
+    },
+    "picture": "photo_arthur.jpg"
+  },
+  "introduction": {
+    "title": "profil professionnel",
+    "content": [
+      "Après une expérience dans le milieu de l’informatique de gestion bancaire, je cherche aujourd’hui à développer mes compétences dans le domaine de l’analyse de données.",
+      "Passionné par la conception de systèmes en tout genres et les sciences en général, je suis actuellement à la recherche d’un contrat d’apprentissage dans la data ou l’apprentissage automatique.",
+      "Motivé par la concrétisation de mon projet professionnel, j’ai avant tout un profil technique et recherche l’émulation d’un groupe de personnes passionnées."
+    ]
+  },
+  "jobs": {
+    "title": "parcours professionnel",
+    "content": [
+      {
+        "title":"Consultant informatique",
+        "date_start": "01/2018",
+        "date_end": "11/2020",
+        "entreprise":"INTM",
+        "city":"Paris-Lyon-Aix",
+        "contract":"CDI",
+        "content":[
+          "Formation au métier d’ingénieur d’études et développement mainframe",
+          "Diverses missions réalisées en tant que consultant, détaillées plus bas"
+        ]
+      },
+      {
+        "title":"Maintenance applicative",
+        "date_start": "11/2019",
+        "date_end": "11/2020",
+        "entreprise":"BPCE",
+        "city":"Aix-en-Provence",
+        "contract":"Mission",
+        "content":[
+          "Au sein de l'équipe Assurances et Épargne en Titres",
+          "Gestion des tickets d'incident",
+          "Développement et mise en production de correctifs",
+          "Création de scripts de correction des fichiers séquentiels",
+          "Maintenance quotidienne des applications"
+        ]
+      },
+      {
+        "title":"Développeur COBOL/PACBASE",
+        "date_start": "09/2018",
+        "date_end": "08/2019",
+        "entreprise":"Sopra Steria pour le Crédit Agricole",
+        "city":"Lyon",
+        "contract":"Mission",
+        "content":[
+          "Développement d'une application de Cash Management",
+          "Conception d'un algorithme de transcodage entre applications",
+          "Plan de tests et tests unitaires",
+          "Documentation technique",
+          "Mise en production"
+        ]
+      },
+      {
+        "title":"Consultant IT",
+        "date_start": "04/2018",
+        "date_end": "06/2018",
+        "entreprise":"Total",
+        "city":"Paris",
+        "contract":"Mission",
+        "content":[
+          "Génération de clefs SSL",
+          "Scripting et automatisations avec Bash/Powershell",
+          "Administration Windows Server et Active Directory"
+        ],
+        "secondary": false
+      },
+      {
+        "title":"Développeur front end",
+        "date_start": "04/2016",
+        "date_end": "08/2016",
+        "entreprise":"Genii",
+        "city":"Paris",
+        "contract":"Stage",
+        "content":[
+          "Création d'un site de parcours et de photos d'urbex",
+          "Conception graphique, Connexion à l'API de Google Maps",
+          "Scripts de vérification d’inscritpion, intégration CSS",
+          "Rédaction d’un document directeur pour l’équipe"
+        ]
+      },
+      {
+        "title":"Assistant web manager",
+        "date_start": "01/2011",
+        "date_end": "01/2013",
+        "entreprise":"Gandy Maroquinerie",
+        "city":"Genoble",
+        "contract":"CDD",
+        "content":[
+          "Préparation des articles pour de la photo style packshot",
+          "Photographie et retouche des images avec Photoshop et Lightroom",
+          "Enrichissement des photos avec les méta-données utiles pour le référencement web"
+        ],
+        "secondary": true
+      }
+    ]
+  },
+  "education": {
+    "title": "formation",
+    "content": [
+      {
+        "title": "École IA Microsoft by Simplon",
+        "date_start": "débute 09/2023",
+        "date_end": "",
+        "school": "Simplon.co",
+        "city": "Marseille"
+      },
+      {
+        "title": "POEC développeur web Angular / NodeJS",
+        "date_start": "04/2022",
+        "date_end": "07/2022",
+        "school": "Softeam Institute",
+        "city": "Aix-en-Provence"
+      },
+      {
+        "title": "Formation développeur Mainframe / COBOL",
+        "date_start": "01/2018",
+        "date_end": "04/2018",
+        "school": "Centre de formation interne NSIS",
+        "city": "Levallois-Perret"
+      },
+      {
+        "title": "POEI développeur web Angular",
+        "date_start": "06/2017",
+        "date_end": "09/2017",
+        "school": "AJC Formation",
+        "city": "Paris"
+      },
+      {
+        "title": "Master 1 d’Architecture",
+        "date_start": "09/2006",
+        "date_end": "11/2011",
+        "school": "École d’Architecture de Grenoble",
+        "city": "Grenoble"
+      }
+    ]
+  },
+  "contact": {
+    "title": "coordonées",
+    "adress": {
+      "city": "Aix-en-Provence",
+      "zipcode": 13100,
+      "street": "Avenue Maurice Blondel",
+      "number": 7
+    },
+    "telephone": "066 066 75 61",
+    "mail": "arthurbauzou@gmail.com",
+    "github": "https://github.com/ArthurBauzou"
+  },
+  "skills": {
+    "title": "compétences",
+    "content": [
+      {
+        "title": "Langages informatiques",
+        "content": [
+          "javascript",
+          "typescript",
+          "python",
+          "COBOL",
+          "powershell",
+          "notions de C++"
+        ]
+      },
+      {
+        "title": "Frameworks et Environnements de développement",
+        "content": [
+          "angular",
+          "nodeJS",
+          "zOS",
+          "pacbase"
+        ]
+      },
+      {
+        "title": "Bases de données",
+        "content": [
+          "mySQL",
+          "mongoDB"
+        ]
+      },
+      {
+        "title": "",
+        "content": "Méthode agile, SCRUM, Merise"
+      },
+      {
+        "title": "autres",
+        "content": [
+          "Illustration traditionelle",
+          "Création graphique",
+          "Modélisation 3D : Blender, Sketchup",
+          "Outils de conception architecturale : AutoCAD, ArchiCAD"
+        ]
+      },
+      {
+        "title": "langues",
+        "content": [
+          "Anglais courant",
+          "Notions d’allemand"
+        ]
+      }
+    ]
+
+  },
+  "interests": {
+    "title": "centres d’intérêt",
+    "content": [
+      "Conception amateur de jeux vidéos, de jeux de rôles et de jeux de société",
+      "Littérature de science fiction",
+      "Art contemporain",
+      "Culture scientifique : Biologie, Physique"
+    ]
+  }
+  
+}
