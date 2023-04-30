@@ -14,7 +14,7 @@
     "title": "profil professionnel",
     "content": [
       "Après une expérience dans le milieu de l’informatique de gestion bancaire, je cherche aujourd’hui à développer mes compétences dans le domaine de l’analyse de données.",
-      "Passionné par la conception de systèmes en tout genres et les sciences en général, je suis actuellement à la recherche d’un contrat d’apprentissage dans la data ou l’apprentissage automatique.",
+      "Passionné par la conception de systèmes en tout genres et les sciences en général, je suis actuellement à la recherche d’un contrat en alternance dans la data ou l’apprentissage automatique.",
       "Motivé par la concrétisation de mon projet professionnel, j’ai avant tout un profil technique et recherche l’émulation d’un groupe de personnes passionnées."
     ]
   },
@@ -137,7 +137,7 @@
         "date_end": "09/2017",
         "school": "AJC Formation",
         "city": "Paris",
-        "secondary": true
+        "secondary": false
       },
       {
         "title": "Master 1 d’Architecture",

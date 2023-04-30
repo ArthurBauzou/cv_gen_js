@@ -11,11 +11,11 @@ body {
 /* ///////// */
 #cv {
     /* margin-top: 10px; */
-    margin-left: 8px;
+    margin-left: 16px;
     width: 21cm;
     height: 29.7cm;
     font-family: 'Fira Sans', sans-serif;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     display: flex;
     flex-direction: column;
 } 
@@ -130,7 +130,7 @@ div.item_coord>i {
 }
 div.item_coord>span {
     padding-top: 3px;
-    margin-right: 8px;
+    margin-right: 12px;
 }
 div.item_coord>a {
     padding-top: 1px;
