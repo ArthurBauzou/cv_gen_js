@@ -1,7 +1,6 @@
 :root {
     --light_green: #dce9e7;
     --deep_green: #166c60;
-    --standard_margin: 3px;
 }
 body {
     margin: 0;
@@ -11,8 +10,8 @@ body {
 /* MAIN GRID */
 /* ///////// */
 #cv {
-    margin-top: 10px;
-    margin-left: 10px;
+    /* margin-top: 10px; */
+    margin-left: 8px;
     width: 21cm;
     height: 29.7cm;
     font-family: 'Fira Sans', sans-serif;
@@ -38,14 +37,14 @@ body {
     flex-direction: row;
 }
 #main_col {
-    width: 70%;
+    width: 64%;
     margin-right: 28px;
-    padding: 4px;
 }
 #side_col {
-    width: auto;
+
     flex: 1;
     padding: 4px;
+
 }
 
 /* /////// */
@@ -53,8 +52,11 @@ body {
 /* /////// */
 img.photo {
     width: 100%;
-    height: 18%;
+    height: 19.6%;
+    border-radius: 64px;
     object-fit: cover;
+    margin-bottom: -6px;
+
 }
 p.name {
     font-size: 28px;
@@ -68,16 +70,17 @@ p.name {
 /* //////// */
 /* SECTIONS */
 /* //////// */
-section {
+section:not(:last-child){
     border-bottom: 1.5px solid black;
 }
+
 /* section title */
 .section_title {
     font-weight: 600;
     display: flex;
     flex-direction: row;
-    margin-bottom: var(--standard_margin);
-    margin-top: 16px;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 .section_title>span {
     margin: 4px 0px;
@@ -87,42 +90,66 @@ section {
     background-color: var(--light_green);
     width: auto;
     margin-left: 8px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     flex: 1;
 }
-/* text */
-p.block_text {
+
+/* blocks */
+div.block_text>p {
     line-height: 16px;
     font-weight: 300;
     font-size: 12px;
     margin: 0px;
-    margin-right: 8px;
-}
-p.block_text:last-child {
-    margin-bottom: 8px;
-}
-/* blocks */
-div.block_line{
-    margin-bottom: 3px;
 }
 span.block_title {
     font-weight: 600;
     font-size: 13px;
     margin: 0px;
 }
-span.block_date {
+span.block_head_item {
+    line-height: 12px;
     font-weight: 400;
     font-size: 12px;
 }
+div.block_head_2 {
+    line-height: 14px;
+    margin-bottom: 4px;
+}
+
+/* coordonnées */
+div.item_coord {
+    display: flex;
+    flex-direction: row;
+}
+div.item_coord>i {
+    width: 12%;
+    text-align: center;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+div.item_coord>span {
+    padding-top: 3px;
+    margin-right: 8px;
+}
+div.item_coord>a {
+    padding-top: 1px;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+
 /* separators */
 span.separator {
     font-weight: 400;
     font-size: 12px;
-    margin: 0px 10px;
+    margin: 0px 8px;
 }
 span.date_separator {
     font-weight: 200;
     font-size: 12px;
     margin: 0px 4px;
+}
+div.end_block {
+    height: 14px;
 }
