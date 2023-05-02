@@ -13,9 +13,9 @@
   "introduction": {
     "title": "profil professionnel",
     "content": [
-      "Après une expérience dans le milieu de l’informatique de gestion bancaire, je cherche aujourd’hui à développer mes compétences dans le domaine de l’analyse de données.",
-      "Passionné par la conception de systèmes en tout genres et les sciences en général, je suis actuellement à la recherche d’un contrat en alternance dans la data ou l’apprentissage automatique.",
-      "Motivé par la concrétisation de mon projet professionnel, j’ai avant tout un profil technique et recherche l’émulation d’un groupe de personnes passionnées."
+      "Après une expérience dans le milieu de l’informatique de gestion bancaire, je cherche aujourd’hui à développer mes compétences dans le domaine de l’<strong>analyse de données</strong>.",
+      "J’aime <strong>construire</strong> les choses brique par brique et j’éprouve une réelle satisfaction à chercher à obtenir un <strong>résultat cohérent</strong> qui soit plus que la somme de ses composants.",
+      "Motivé par la concrétisation de mon projet professionnel, j’ai avant tout un profil technique et recherche l’émulation d’un groupe de <strong>personnes passionnées</strong>."
     ]
   },
   "jobs": {
@@ -160,25 +160,27 @@
     "title": "compétences",
     "content": [
       {
+        "title": "Compétences transverses",
+        "content": [
+          "Recherche d’efficience",
+          "Travail en équipe",
+          "Bonne communication"
+        ]
+      },
+      {
         "title": "Langages informatiques",
         "content": [
           "Python",
           "Javascript, Typescript",
           "COBOL, Pacbase",
-          "Bash, Powershell",
-          "Notions de C++"
+          "Bash, Powershell"
         ]
       },
       {
-        "title": "Frameworks",
+        "title": "Frameworks et Technologies",
         "content": [
           "Angular",
-          "NodeJS"
-        ]
-      },
-      {
-        "title": "Bases de données",
-        "content": [
+          "NodeJS",
           "MySQL, MongoDB"
         ]
       },

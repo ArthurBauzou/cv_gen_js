@@ -34,7 +34,11 @@ function createCV(data) {
     doc_plan.section = {}
     for (prop in data) { cr_section(prop, data[prop], doc_plan) }
     // -- intro
-    doc_plan.section.introduction.appendChild(cr_block_text(data.introduction.content))
+    doc_plan.section.introduction.appendChild(cr_block_text(
+        data.introduction.content,
+        '',
+        "intro"
+        ))
     doc_plan.section.introduction.appendChild(cr_end_block_div())
     // -- experiences
     for (let job of data.jobs.content) {
@@ -184,12 +188,12 @@ function cr_section_title(title) {
     div.append(el, bar)
     return div
 }
-function cr_block_text(lines, puce='') {
+function cr_block_text(lines, puce='', textclass=false) {
     let div = document.createElement('div')
-    div.classList.add("block_text")
     for (let line of lines) {
         let p = document.createElement('p')
         p.innerHTML = puce + line
+        if (textclass) {p.classList.add(textclass)}
         div.appendChild(p)
     }
     return div
@@ -251,7 +255,7 @@ function cr_end_block_div() {
 function cr_icon(icon) {
     switch (icon) {
         case 'adresse':
-            return '<i class="fa-solid fa-location-dot" style="padding-top:7px"></i>'
+            return '<i class="fa-solid fa-location-dot" style="padding-top:6px"></i>'
         case 'telephone':
             return '<i class="fa-solid fa-phone"></i>'
         case 'mail':
