@@ -40,6 +40,12 @@ function createCV(data) {
         "intro"
         ))
     doc_plan.section.introduction.appendChild(cr_end_block_div())
+    // -- relevant
+    for (let job of data.relevant.content) {
+        if (!job.secondary) {
+            doc_plan.section.relevant.appendChild(cr_job_block(job)) 
+        }
+    }
     // -- experiences
     for (let job of data.jobs.content) {
         if (!job.secondary) {
@@ -56,7 +62,9 @@ function createCV(data) {
     doc_plan.section.contact.appendChild(cr_coord_block(data.contact))
     // -- compétences
     for (let skill of data.skills.content) {
-        doc_plan.section.skills.appendChild(cr_skill_block(skill))
+        if (!skill.secondary) {
+            doc_plan.section.skills.appendChild(cr_skill_block(skill))
+        }
     }
     // -- intérets
     doc_plan.section.interests.appendChild(cr_block_text(data.interests.content))
