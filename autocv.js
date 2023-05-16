@@ -67,7 +67,7 @@ function createCV(data) {
         }
     }
     // -- intérets
-    doc_plan.section.interests.appendChild(cr_block_text(data.interests.content))
+    doc_plan.section.interests.appendChild(cr_block_text(data.interests.content, '- '))
     doc_plan.section.interests.appendChild(cr_end_block_div())
 }
 
@@ -94,6 +94,7 @@ function cr_basic_grid(el, plan) {
 
 function cr_section(section, obj, plan) {
     let el = document.createElement("section")
+    el.classList.add(section)
     el.appendChild(cr_section_title(obj.title))
     if (obj.title[0] == 'c')    { plan.side_col.append(el) }
     else                        { plan.main_col.append(el) }

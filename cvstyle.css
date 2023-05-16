@@ -1,10 +1,11 @@
 :root {
-    --light_green: #dce9e7;
-    --deep_green: #166c60;
+    --light-accent: #c1daf4;
+    --deep-accent: #484c69;
 }
 
 body {
     margin: 0;
+    /* background-color: #bdbfc7; */
 }
 
 section {
@@ -30,7 +31,7 @@ p {
     /* border-bottom: 1px solid black; */
 } 
 #title_bar {
-    background-color: var(--deep_green);
+    background-color: var(--deep-accent);
     text-align: right;
     color: white;
     font-weight: 600;
@@ -51,8 +52,13 @@ p {
 #main_col {
     width: 66%;
     margin-right: 32px;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
 }
 #side_col {
+    /* background-color: #383838; */
+    /* color: white; */
     flex: 1;
     /* padding: 4px; */
 }
@@ -73,7 +79,7 @@ img.photo {
 p.name {
     font-size: 32px;
     padding-bottom: 12px;
-    border-bottom: 1.5px solid var(--deep_green);
+    border-bottom: 1.5px solid var(--deep-accent);
     font-weight: 800;
 }
 
@@ -83,7 +89,7 @@ p.name {
 
 
 section:not(:last-child){
-    border-bottom: 1.5px solid var(--deep_green);
+    border-bottom: 1.5px solid var(--deep-accent);
 }
 
 /* section title */
@@ -99,7 +105,7 @@ section:not(:last-child){
     font-size: 20px;
 }
 .section_title>span.barre {
-    background-color: var(--light_green);
+    background-color: var(--light-accent);
     width: auto;
     margin-left: 8px;
     margin-top: 4px;
@@ -163,3 +169,8 @@ div.end_block {
 /* #side_col div.end_block {
     height: 10px;
 } */
+
+section.interests p {
+    /* line-height: 14px; */
+    margin-bottom: 3px;
+}
