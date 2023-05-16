@@ -103,6 +103,20 @@
           "Photographie et retouche des images avec Photoshop et Lightroom",
           "Enrichissement des photos avec les méta-données utiles pour le référencement web"
         ]
+      },
+      {
+        "title":"Serveur / Barman",
+        "date_start": "10/2009",
+        "date_end": "06/2010",
+        "entreprise":"Café de la librairie Decitre",
+        "city":"Genoble",
+        "contract":"CDD",
+        "content":[
+          "Préparation de cafés, cappuccinos, glaces et théières",
+          "Service en salle, pendant les heures de bar mais surtout pendant la période de midi",
+          "Nettoyage continu de la vaisselle, plonge, nettoyage de la cuisine selon les normes d’hygiène"
+        ], 
+        "secondary": true
       }
     ]
   },

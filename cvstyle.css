@@ -27,7 +27,7 @@ p {
     font-family: 'Fira Sans', sans-serif;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 } 
 #title_bar {
     background-color: var(--deep_green);
@@ -102,7 +102,7 @@ section:not(:last-child){
     background-color: var(--light_green);
     width: auto;
     margin-left: 8px;
-    margin-top: 3px;
+    margin-top: 4px;
     margin-bottom: 6px;
     flex: 1;
 }
