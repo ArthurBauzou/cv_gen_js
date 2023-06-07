@@ -17,6 +17,7 @@ function createCV(data) {
     cr_basic_grid(cv_element, doc_plan)
     // -- titre cv
     doc_plan.title_bar.innerHTML = general_infos.title.toUpperCase()
+    cr_texture(doc_plan.title_bar, ['cafe', 'coupe', 'theiere', 'verre'])
     // -- photo
     let photo = document.createElement('img')
     photo.classList.add('photo')
@@ -276,4 +277,19 @@ function cr_icon(icon) {
         default:
             return '<i></i>'
     }
+}
+
+function cr_texture(element, list) {
+    let texture = document.createElement('div')
+    texture.classList.add('texture')
+    list.forEach(e => {
+        texture.append(cr_texture_icon(e))
+    });
+    element.append(texture)
+}
+
+function cr_texture_icon(name) {
+    let icon = document.createElement('img')
+    icon.setAttribute('src', `icons/${name}.svg`)
+    return icon
 }

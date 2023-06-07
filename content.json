@@ -1,6 +1,6 @@
 {  
   "general": {
-    "title": "développeur IA / data analyst",
+    "title": "Serveur / Garçon de café",
     "first_name": "arthur",
     "last_name": "bauzou",
     "birth": {
@@ -8,7 +8,7 @@
       "month": 6,
       "year": 1985
     },
-    "picture": "photo_alt.jpg"
+    "picture": "photo_arthur.jpg"
   },
   "introduction": {
     "title": "profil professionnel",
@@ -18,7 +18,7 @@
     ]
   },
   "relevant": {
-    "title": "expériences pertienentes",
+    "title": "expérience pertinente",
     "content": [
       {
         "title":"Serveur / Barman",
