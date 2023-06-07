@@ -41,19 +41,21 @@ p {
     font-size: 18px;
     margin-bottom: 16px;
     flex-shrink: 0;
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 8px 8px;
     position: relative;
 }
 #title_bar .texture {
     position: absolute;
-    top: -8px;
-    left: -24px;
+    top: -4px;
+    /* left: -64px; */
     mix-blend-mode: screen;
-    opacity: 0.6;
-    transform: scale(75%)
+    opacity: 0.2;
+    transform: scale(80%) translate(-164px);
+    width: 130%;
 }
 #title_bar .texture img {
-    padding: 8px;
+    margin-right: 28px;
+    position: relative;
 }
 
 #main_cv {
@@ -78,13 +80,11 @@ p {
 /* /////// */
 img.photo {
     width: 100%;
-    /* height: 21.1%; */
-    border-radius: 4px;
+    border-radius: 8px;
     box-sizing: border-box;
     object-fit: cover;
     margin-top: 8px;
     aspect-ratio: 1/1;
-    /* margin-bottom: -6px; */
 }
 p.name {
     font-size: 32px;
