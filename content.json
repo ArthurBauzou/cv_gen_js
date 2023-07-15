@@ -186,10 +186,10 @@
       {
         "title": "Langages informatiques",
         "content": [
-          "Python",
           "Javascript, Typescript",
-          "COBOL, Pacbase",
-          "Bash, Powershell"
+          "PHP, Python",
+          "SQL",
+          "COBOL, Pacbase"
         ]
       },
       {
