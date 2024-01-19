@@ -128,7 +128,8 @@
         "date_start": "09/2023",
         "date_end": "12/2023",
         "school": "Simplon.co",
-        "city": "Marseille"
+        "city": "Marseille",
+        "secondary": true
       },
       {
         "title": "POEC développeur web Angular / NodeJS",
