@@ -264,6 +264,8 @@ function cr_icon(icon) {
             return '<i class="fa-brands fa-github"></i>'
         case 'itchio':
             return '<i class="fa-solid fa-gamepad"></i>'
+        case 'tumblr':
+                return '<i class="fa-brands fa-square-tumblr"></i>'
         default:
             return '<i></i>'
     }
