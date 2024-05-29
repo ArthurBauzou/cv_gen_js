@@ -208,9 +208,10 @@ function cr_block_date(source_start, source_end) {
     let span = document.createElement('span')
     let s_span = document.createElement('span')
     let e_span = document.createElement('span')
-    s_span.innerHTML = source_start
-    e_span.innerHTML = source_end
-    let separator = source_end==''? '':'-'
+    // substring(3) pour ne pas afficher les mois
+    s_span.innerHTML = source_start.substring(3)
+    e_span.innerHTML = source_end.substring(3)
+    let separator = source_end==''? '':'–'
     span.append(
         s_span, 
         cr_date_separator(separator), 
