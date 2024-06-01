@@ -15,19 +15,25 @@ function createCV(data) {
     
 // TITRES, PHOTOS
     cr_basic_grid(cv_element, doc_plan)
-    // -- titre cv
-    doc_plan.title_bar.innerHTML = general_infos.title.toUpperCase()
-    // -- photo
+
+    // -- photo and name
     let photo = document.createElement('img')
     photo.classList.add('photo')
     photo.setAttribute('src',general_infos.picture)
-    doc_plan.side_col.appendChild(photo)
-    // -- name
-    let name = document.createElement('p')
-    t = general_infos.first_name + ' ' + general_infos.last_name
-    name.classList.add('name')
-    name.innerHTML = t.toUpperCase()
-    doc_plan.main_col.appendChild(name)
+
+    // let name = document.createElement('p')
+    // name.classList.add('name')
+    // fullname_str = general_infos.first_name + ' ' + general_infos.last_name
+    // name.innerHTML = fullname_str.toUpperCase()
+
+    doc_plan.side_col.append(photo, name)
+    console.log(name)
+
+    // -- title
+    let title = document.createElement('p')
+    title.classList.add('title')
+    title.innerHTML = general_infos.title.toUpperCase()
+    doc_plan.main_col.appendChild(title)
     
 // SECTIONS
     // -- init sections ; add title bars
@@ -53,7 +59,10 @@ function createCV(data) {
         }
     }
     // -- coordonnées
-    doc_plan.section.contact.appendChild(cr_coord_block(data.contact))
+    doc_plan.section.contact.append(
+        cr_coord_block(data.contact.primary, true),
+        cr_coord_block(data.contact.secondary)
+    )
     // -- compétences
     for (let skill of data.skills.content) {
         doc_plan.section.skills.appendChild(cr_skill_block(skill))
@@ -87,8 +96,9 @@ function cr_basic_grid(el, plan) {
 function cr_section(section, obj, plan) {
     let el = document.createElement("section")
     el.appendChild(cr_section_title(obj.title))
-    if (obj.title[0] == 'c')    { plan.side_col.append(el) }
-    else                        { plan.main_col.append(el) }
+    console.log(obj.loc)
+    if (obj.loc == 'side')   { plan.side_col.append(el) }
+    else                     { plan.main_col.append(el) }
     plan.section[section] = el
 }
 
@@ -98,7 +108,7 @@ function cr_job_block(job) {
     let block_head_1 = document.createElement('div')
     block_head_1.append(
         cr_block_title(job.title), 
-        cr_separator('·'), 
+        cr_separator('•'), 
         cr_block_date(job.date_start, job.date_end)
         )
     job_block.appendChild(block_head_1)
@@ -107,9 +117,9 @@ function cr_job_block(job) {
     block_head_2.classList.add('block_head_2')
     block_head_2.append(
         cr_block_head_item(job.entreprise), 
-        cr_separator('·'), 
+        cr_separator('•'), 
         cr_block_head_item(job.city),
-        cr_separator('·'), 
+        cr_separator('•'), 
         cr_block_head_item(job.contract)
         )
     job_block.appendChild(block_head_2)
@@ -126,8 +136,8 @@ function cr_edu_block(edu) {
     let block_head_1 = document.createElement('div')
     block_head_1.append(
         cr_block_title(edu.title), 
-        cr_separator('·'), 
-        cr_block_date(edu.date_start, edu.date_end)
+        cr_separator('•'), 
+        cr_block_date(edu.date_start, edu.date_end, true)
         )
     edu_block.appendChild(block_head_1)
     // edu company and city
@@ -135,7 +145,7 @@ function cr_edu_block(edu) {
     block_head_2.classList.add('block_head_2')
     block_head_2.append(
         cr_block_head_item(edu.school), 
-        cr_separator('·'), 
+        cr_separator('•'), 
         cr_block_head_item(edu.city)
         )
     edu_block.appendChild(block_head_2)
@@ -156,8 +166,9 @@ function cr_skill_block(skill) {
     return skill_block
 }
 
-function cr_coord_block(coord) {
+function cr_coord_block(coord, primary = false) {
     let coord_block = document.createElement('div')
+    if (primary) { coord_block.classList.add('coord_primary') }
     for (item in coord) {
         if (item == 'title') {continue}
         let coord_item = document.createElement('div')
@@ -171,7 +182,6 @@ function cr_coord_block(coord) {
         }
         coord_block.appendChild(coord_item)
         coord_block.appendChild(cr_end_block_div())
-
     }
 
     return coord_block
@@ -204,19 +214,29 @@ function cr_block_title(source) {
     span.innerHTML = source
     return span
 }
-function cr_block_date(source_start, source_end) {
+/**
+ * Met en forme la date .
+ *
+ * @param {number} start - date de début.
+ * @param {number} end - date de fin.
+ * @param {boolean} just_end - n’afficher que la date de fin.
+ * @returns {HTMLElement} un <span> au bon format.
+ */
+function cr_block_date(start, end, just_end=false) {
     let span = document.createElement('span')
     let s_span = document.createElement('span')
     let e_span = document.createElement('span')
     // substring(3) pour ne pas afficher les mois
-    s_span.innerHTML = source_start.substring(3)
-    e_span.innerHTML = source_end.substring(3)
-    let separator = source_end==''? '':'–'
-    span.append(
-        s_span, 
-        cr_date_separator(separator), 
-        e_span
+    s_span.innerHTML = start.substring(3)
+    e_span.innerHTML = end.substring(3)
+    // let separator = end==''? '':'–'
+    if (!just_end) {
+        span.append(
+            s_span, 
+            cr_date_separator('–')
         )
+    }
+    span.append(e_span)
     span.classList.add("block_head_item")
     return span
 }

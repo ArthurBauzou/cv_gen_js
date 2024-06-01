@@ -16,7 +16,8 @@
       "Après une expérience dans le milieu de l’informatique de gestion bancaire, je cherche aujourd’hui à développer mes compétences dans le domaine du <strong>développement d’applications</strong>.",
       "J’aime <strong>construire</strong> les choses brique par brique et j’éprouve une réelle satisfaction à chercher à obtenir un <strong>résultat cohérent</strong> qui soit plus que la somme de ses composants.",
       "Motivé par la concrétisation de mon projet professionnel, j’ai avant tout un profil technique et recherche l’émulation d’un groupe de <strong>personnes passionnées</strong>."
-    ]
+    ],
+    "loc": "main"
   },
   "jobs": {
     "title": "parcours professionnel",
@@ -118,7 +119,8 @@
         ], 
         "secondary": true
       }
-    ]
+    ],
+    "loc": "main"
   },
   "education": {
     "title": "formation",
@@ -160,16 +162,22 @@
         "school": "École d’Architecture de Grenoble",
         "city": "Grenoble"
       }
-    ]
+    ],
+    "loc": "main"
   },
   "contact": {
-    "title": "coordonnées",
-    "adresse": "7 Avenue Maurice Blondel, 13100, Aix-en-Provence",
-    "telephone": "066 066 75 61",
-    "mail": "arthurbauzou@gmail.com",
-    "github": "https://github.com/ArthurBauzou",
-    "itchio": "https://poulpehibou.itch.io",
-    "tumblr": "https://poulpehibou.tumblr.com"
+    "title": "ARTHUR BAUZOU",
+    "primary": {
+      "telephone": "066 066 75 61",
+      "mail": "arthurbauzou@gmail.com"
+    },
+    "secondary": {
+      "github": "https://github.com/ArthurBauzou",
+      "itchio": "https://poulpehibou.itch.io",
+      "tumblr": "https://poulpehibou.tumblr.com",
+      "adresse": "7 Avenue Maurice Blondel, 13100, Aix-en-Provence"
+    },
+    "loc": "side"
   },
   "skills": {
     "title": "compétences",
@@ -206,20 +214,15 @@
       {
         "title": "Autres",
         "content": [
+          "Anglais courant : niveau C1",
           "Illustration traditionelle",
           "Création graphique",
           "Modélisation 3D : Blender, Sketchup",
           "Outils CAO : AutoCAD, ArchiCAD"
         ]
-      },
-      {
-        "title": "Langues",
-        "content": [
-          "Anglais courant",
-          "Notions d’allemand"
-        ]
       }
-    ]
+    ],
+    "loc": "side"
 
   },
   "interests": {
@@ -229,7 +232,8 @@
       "Littérature de science fiction",
       "Art contemporain",
       "Culture scientifique : Biologie, Physique"
-    ]
+    ],
+    "loc": "side"
   }
   
 }

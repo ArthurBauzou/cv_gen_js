@@ -1,0 +1,4 @@
+- [ ] bloc avec données importantes dans les coordonnées
+- [ ] changer le titre pour le poste recherché
+- [ ] placer mon nom sous la photo
+- [x] simplifier les dates

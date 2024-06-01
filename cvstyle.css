@@ -62,6 +62,7 @@ p {
 /* /////// */
 img.photo {
     width: 100%;
+    height: 233px;
     /* height: 21.1%; */
     border-radius: 4px;
     box-sizing: border-box;
@@ -71,6 +72,12 @@ img.photo {
     /* margin-bottom: -6px; */
 }
 p.name {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+
+}
+p.title {
     font-size: 32px;
     padding-bottom: 12px;
     border-bottom: 1.5px solid var(--deep_green);
@@ -125,6 +132,13 @@ div.block_head_2 {
 }
 
 /* coordonnées */
+div.coord_primary {
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1.5px solid var(--deep_green);
+}
+
 div.item_coord {
     display: flex;
     flex-direction: row;
