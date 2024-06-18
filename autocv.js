@@ -27,7 +27,6 @@ function createCV(data) {
     // name.innerHTML = fullname_str.toUpperCase()
 
     doc_plan.side_col.append(photo, name)
-    console.log(name)
 
     // -- title
     let title = document.createElement('p')
@@ -96,7 +95,6 @@ function cr_basic_grid(el, plan) {
 function cr_section(section, obj, plan) {
     let el = document.createElement("section")
     el.appendChild(cr_section_title(obj.title))
-    console.log(obj.loc)
     if (obj.loc == 'side')   { plan.side_col.append(el) }
     else                     { plan.main_col.append(el) }
     plan.section[section] = el
@@ -223,6 +221,7 @@ function cr_block_title(source) {
  * @returns {HTMLElement} un <span> au bon format.
  */
 function cr_block_date(start, end, just_end=false) {
+    if (start.substring(3) == end.substring(3)) { just_end = true }
     let span = document.createElement('span')
     let s_span = document.createElement('span')
     let e_span = document.createElement('span')

@@ -23,6 +23,18 @@
     "title": "parcours professionnel",
     "content": [
       {
+        "title":"Développeur Data",
+        "date_start": "11/2023",
+        "date_end": "12/2023",
+        "entreprise":"COEXEL",
+        "city":"Toulon",
+        "contract":"Stage",
+        "content":[
+          "Développement d’une page de bilan des opérations réseau",
+          "Visualisation sur graphique interactif"
+        ]
+      },
+      {
         "title":"Consultant informatique",
         "date_start": "01/2018",
         "date_end": "11/2020",
@@ -42,10 +54,8 @@
         "city":"Aix-en-Provence",
         "contract":"Mission",
         "content":[
-          "Au sein de l'équipe Assurances et Épargne en Titres",
           "Gestion des tickets d'incident",
           "Développement et mise en production de correctifs",
-          "Création de scripts de correction des fichiers séquentiels",
           "Maintenance quotidienne des applications"
         ]
       },
@@ -59,9 +69,7 @@
         "content":[
           "Développement d'une application de Cash Management",
           "Conception d'un algorithme de transcodage entre applications",
-          "Plan de tests et tests unitaires",
-          "Documentation technique",
-          "Mise en production"
+          "Plan de tests et tests unitaires"
         ]
       },
       {
@@ -88,8 +96,7 @@
         "content":[
           "Création d'un site de parcours et de photos d'urbex",
           "Conception graphique, Connexion à l'API de Google Maps",
-          "Scripts de vérification d’inscritpion, intégration CSS",
-          "Rédaction d’un document directeur pour l’équipe"
+          "Scripts de vérification d’inscritpion, intégration CSS"
         ]
       },
       {
