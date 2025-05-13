@@ -223,6 +223,7 @@ function cr_block_title(source) {
  * @returns {HTMLElement} un <span> au bon format.
  */
 function cr_block_date(start, end, just_end=false) {
+    if (start.substring(3) == end.substring(3)) { just_end = true }
     let span = document.createElement('span')
     let s_span = document.createElement('span')
     let e_span = document.createElement('span')
