@@ -27,7 +27,6 @@ function createCV(data) {
     // name.innerHTML = fullname_str.toUpperCase()
 
     doc_plan.side_col.append(photo, name)
-    console.log(name)
 
     // -- title
     let title = document.createElement('p')
@@ -65,7 +64,9 @@ function createCV(data) {
     )
     // -- compétences
     for (let skill of data.skills.content) {
-        doc_plan.section.skills.appendChild(cr_skill_block(skill))
+        if (!skill.secondary) {
+            doc_plan.section.skills.appendChild(cr_skill_block(skill))
+        }
     }
     // -- intérets
     doc_plan.section.interests.appendChild(cr_block_text(data.interests.content))
@@ -96,7 +97,6 @@ function cr_basic_grid(el, plan) {
 function cr_section(section, obj, plan) {
     let el = document.createElement("section")
     el.appendChild(cr_section_title(obj.title))
-    console.log(obj.loc)
     if (obj.loc == 'side')   { plan.side_col.append(el) }
     else                     { plan.main_col.append(el) }
     plan.section[section] = el
@@ -229,7 +229,8 @@ function cr_block_date(start, end, just_end=false) {
     // substring(3) pour ne pas afficher les mois
     s_span.innerHTML = start.substring(3)
     e_span.innerHTML = end.substring(3)
-    // let separator = end==''? '':'–'
+    // si l’année est la même on n’affiche qu’une fois
+    if (start.substring(3) == end.substring(3)) {just_end = true}
     if (!just_end) {
         span.append(
             s_span, 
